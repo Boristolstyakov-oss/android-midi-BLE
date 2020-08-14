@@ -1,0 +1,15 @@
+language: android
+jdk: oraclejdk7
+android:
+  components:
+    - build-tools-22.0.1
+    - android-22
+    - extra-android-m2repository
+    - extra-google-m2repository
+  licenses:
+    - '.+'
+before_install:
+ - chmod +x gradlew
+script:
+  - ./gradlew check
+
